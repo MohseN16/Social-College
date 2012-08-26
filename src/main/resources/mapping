@@ -1,0 +1,7 @@
+[config]
+package.views=WEB-INF/com.trainbit.socialcollege
+package.base=com.trainbit.socialcollege
+
+[actions]
+*         /                           Base.index
+*         /{class}/{method}           {class}.{method}
