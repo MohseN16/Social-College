@@ -1,6 +1,6 @@
 [config]
-package.views=WEB-INF/com.trainbit.socialcollege
-package.base=com.trainbit.socialcollege
+package.views=app.views
+package.base=app.controllers
 
 [actions]
 *         /                           Base.index

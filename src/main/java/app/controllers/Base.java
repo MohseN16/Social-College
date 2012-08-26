@@ -1,4 +1,4 @@
-package com.trainbit.socialcollege;
+package app.controllers;
 
 import org.debux.webmotion.server.WebMotionController;
 import org.debux.webmotion.server.render.Render;
@@ -10,7 +10,7 @@ public class Base extends WebMotionController {
     private static final Logger log = LoggerFactory.getLogger(Base.class);
     
     public Render index() {
-        return renderView("index.jsp");
+        return renderView("index.jsp","name","Social College");
     }
     
 }
