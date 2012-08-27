@@ -108,5 +108,7 @@
             </snapshots>
         </repository>
     </repositories>
-    
+    <properties>
+        <netbeans.hint.deploy.server>Tomcat</netbeans.hint.deploy.server>
+    </properties>
 </project>
