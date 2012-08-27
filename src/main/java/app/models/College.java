@@ -1,8 +1,7 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package app.models;
+
+import org.bson.types.ObjectId;
 
 /**
  *
@@ -10,6 +9,8 @@ package app.models;
  */
 public class College {
     private String name;
-    private int id;
+    private ObjectId _id;
+    private String address;
+    
     
 }
