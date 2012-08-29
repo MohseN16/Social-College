@@ -1,0 +1,50 @@
+﻿@font-face {
+     font-family: 'b yekan';
+           src: url('/public/fonts/b_yekan.eot?#ie') format('eot'),  /* IE6–8 */
+       url('/public/fonts/b_yekan.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+       url('/public/fonts/b_yekan.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+    font-weight: normal;
+    font-style: normal;
+}
+body
+{
+background-image: url('/public/images/layouts/bg.png');    
+background-repeat: repeat;
+direction:rtl;
+font-family: tahoma;
+font-size:13px;
+line-height: 1.6em;
+}
+
+#header
+{
+    background: -moz-linear-gradient(center top , #FFFFFF, #F6F6F6) repeat scroll 0 0 transparent;
+    border-bottom: 1px solid #BBBBBB;
+    box-shadow: 0 0 2px #CCCCCC;
+    height: 50px;
+}
+#header .menu
+{
+ height: 30px;
+    padding: 8px 10px 10px;
+    float: right;
+}
+#header .logo
+{
+    float: right;
+    padding: 9px 0;
+}
+#header .menu li
+{
+ float: right;
+    font-family: 'b yekan';
+    font-size: 15px;
+    padding: 5px 15px;
+}
+#header .menu li a:hover{
+    text-decoration: none;
+}
+#wrapper #content
+{
+    margin-top: 20px;
+}
