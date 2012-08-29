@@ -139,6 +139,7 @@ background: -moz-linear-gradient(top,#fff,#f9f9f9);
     padding: 7px 10px 10px;
     width: 92%;
      box-shadow: 0 0 2px #E1E1E1;
+     color:#555;
 }
 
 /* Grid System =========================================================== */

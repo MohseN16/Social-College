@@ -8,9 +8,9 @@ import org.jongo.MongoCollection;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class Base extends WebMotionController {
+public class BaseController extends WebMotionController {
 
-    private static final Logger log = LoggerFactory.getLogger(Base.class);
+    private static final Logger log = LoggerFactory.getLogger(BaseController.class);
     
     public Render index() {
         MongoCollection collection = MongoHelper.getCollection("persons");

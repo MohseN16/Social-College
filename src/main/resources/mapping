@@ -4,4 +4,11 @@ package.base=app.controllers
 
 [actions]
 *         /                           Base.index
-*         /{class}/{method}           {class}.{method}
+*         /view/{name}                view:/{name}.jsp
+*         /{class}/                   {class}Controller.index
+*         /{class}/{method}           {class}Controller.{method}
+
+
+
+
+
