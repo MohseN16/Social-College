@@ -5,7 +5,7 @@
         <a class="logo"><img src="http://cdn1.iconfinder.com/data/icons/iconfinder_pixel/education_course_training.png" /></a>
         <ul class="menu">
             <li><a href="#">خانه</a></li>
-            <li><a href="/membership/login">ورود</a></li>
+            <li><a href="/login/">ورود</a></li>
             <li><a href="#" >عضویت</a></li>
             <li><a href="#" >راهنما</a></li>
             <li><a href="#" >ارتباط با ما</a></li>

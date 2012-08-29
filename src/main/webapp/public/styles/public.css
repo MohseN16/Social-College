@@ -35,6 +35,10 @@ a:hover {
   color: #0767B4;
   text-decoration: underline;
 }
+label
+{
+    cursor: pointer;
+}
 /*Controlls ==================================================================*/
 .panel
 {
@@ -94,7 +98,7 @@ border-top:none;
 {
     margin-bottom:10px;
 }
-.form-horizontal label
+.form-horizontal .control-label
 {
     font-family: 'b yekan';
     margin-bottom: 5px;
@@ -141,6 +145,16 @@ background: -moz-linear-gradient(top,#fff,#f9f9f9);
      box-shadow: 0 0 2px #E1E1E1;
      color:#555;
 }
+.textbox.rtl
+{
+    text-align: right;
+}
+.textbox.ltr
+{
+    text-align: left;    
+}
+
+
 
 /* Grid System =========================================================== */
 .row {
