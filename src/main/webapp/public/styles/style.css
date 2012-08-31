@@ -1,4 +1,4 @@
-﻿@font-face {
+@font-face {
      font-family: 'b yekan';
            src: url('/public/fonts/b_yekan.eot?#ie') format('eot'),  /* IE6–8 */
        url('/public/fonts/b_yekan.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
@@ -42,8 +42,14 @@ color:#555;
     font-size: 15px;
     padding: 5px 15px;
 }
+#header .menu li a
+{
+    font-weight: bold;
+    
+}
 #header .menu li a:hover{
     text-decoration: none;
+    
 }
 #wrapper #content
 {

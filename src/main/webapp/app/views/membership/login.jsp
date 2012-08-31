@@ -19,38 +19,36 @@
                                 ورود
                             </div>
                             <div class="panel-body">
-                                <div class="form-horizontal">
+                                <div class="form-horizontal"> 
                                     <div class="control-group">
                                         <label class="control-label">نام کاربری</label>
                                         <div class="controls">
                                             <input type="text" class="textbox ltr" />
                                         </div>
                                     </div>
-                                             <div class="control-group">
-                                                 <label class="control-label">رمز عبور </label>
+                                    <div class="control-group">
+                                        <label class="control-label">رمز عبور </label>
                                         <div class="controls">
                                             <input type="text" class="textbox ltr" />
                                         </div>
                                     </div>
-                                              <div class="control-group">
-                                        
+                                    <div class="control-group">
+
                                         <div class="controls">
                                             <input type="checkbox" id="ch_remember" /><label for="ch_remember">مرا به خاطر بسپار ؟ </label>
                                         </div>
                                     </div>
-                                
-                         </div>
-                            
+                                </div>
                             </div>
                             <div class="panel-footer clearfix">
-                                       <button class="button accept full">
+                                <button class="button accept full">
                                     <span>ورود</span>
                                 </button>
-                             
+
                             </div>
                         </div>
                     </div>
-        
+
                 </div>
             </div>
             <%@include file="/app/layouts/footer.jspf" %>

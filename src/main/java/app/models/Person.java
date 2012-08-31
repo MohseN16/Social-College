@@ -1,16 +1,14 @@
 package app.models;
 
-import app.helpers.MongoHelper;
 import org.bson.types.ObjectId;
-import org.jongo.MongoCollection;
 
 public class Person {
 
-    private String firstname;
-    private String lastname;
-    private String mobile;
-    private String email;
-    private ObjectId _id;
+    protected String firstname;
+    protected String lastname;
+    protected String mobile;
+    protected String email;
+    
 
     public Person() {
     }
@@ -20,7 +18,7 @@ public class Person {
         this.lastname = lastname;
         this.mobile = mobile;
         this.email = email;
-        this._id = _id;
+    
     }
 
     public String getEmail() {
@@ -35,9 +33,7 @@ public class Person {
         return lastname;
     }
 
-    public ObjectId getId() {
-        return _id;
-    }
+    
 
     public String getMobile() {
         return mobile;
@@ -51,9 +47,6 @@ public class Person {
         this.firstname = firstname;
     }
 
-    public void setId(ObjectId _id) {
-        this._id = _id;
-    }
 
     public void setMobile(String mobile) {
         this.mobile = mobile;
@@ -63,13 +56,4 @@ public class Person {
         this.lastname = lastname;
     }
 
-    public void Save() {
-        try {
-            MongoCollection collection = MongoHelper.getCollection("persons");
-            collection.save(this);
-        } catch (Exception ex) {
-            Log log = new Log(ex);
-            log.Save();
-        }
-    }
 }
