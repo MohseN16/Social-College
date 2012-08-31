@@ -2,8 +2,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <%@include file="/app/layouts/head.jspf" %>
         <title>social-college</title>
+        <%@include file="/app/layouts/head.jspf" %>
+        <script type="text/javascript" src="/public/scripts/membership.js"></script>
     </head>
     <body>
         <div id="wrapper">
@@ -23,13 +24,13 @@
                                     <div class="control-group">
                                         <label class="control-label">نام کاربری</label>
                                         <div class="controls">
-                                            <input type="text" class="textbox ltr" />
+                                            <input id="t_username" type="text" class="textbox ltr" />
                                         </div>
                                     </div>
                                     <div class="control-group">
                                         <label class="control-label">رمز عبور </label>
                                         <div class="controls">
-                                            <input type="text" class="textbox ltr" />
+                                            <input type="password" id="t_password" class="textbox ltr" />
                                         </div>
                                     </div>
                                     <div class="control-group">
@@ -41,7 +42,7 @@
                                 </div>
                             </div>
                             <div class="panel-footer clearfix">
-                                <button class="button accept full">
+                                <button class="button accept full" onclick="app.methods.login();">
                                     <span>ورود</span>
                                 </button>
 

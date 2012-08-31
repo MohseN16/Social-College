@@ -1,7 +1,11 @@
 package app.models;
 
 import app.helpers.MongoHelper;
+import core.Consts;
+import core.security.crypto.AESEncryption;
+import java.net.URLEncoder;
 import org.bson.types.ObjectId;
+
 import org.jongo.MongoCollection;
 
 public class Student extends Person {
@@ -10,8 +14,6 @@ public class Student extends Person {
     private String studentid;
     private String username;
     private String password;
-
-  
 
     public void setStudentID(String studentid) {
         this.studentid = studentid;
@@ -44,8 +46,7 @@ public class Student extends Person {
     public void setPassword(String password) {
         this.password = password;
     }
-     
-    
+
     public void Save() {
         try {
             MongoCollection collection = MongoHelper.getCollection("students");
@@ -55,15 +56,16 @@ public class Student extends Person {
             log.Save();
         }
     }
-    
-    public static Student finyByUsername(String username)
-    {
+
+    public static Student finyByUsername(String username) {
         MongoCollection collection = MongoHelper.getCollection("students");
-          Student stu = collection.findOne(String.format("{username :  '%s'}",username)).as(Student.class);
-          return stu;
+        Student stu = collection.findOne(String.format("{username :  '%s'}", username)).as(Student.class);
+        return stu;
     }
-    public String toCookie()
-    {
-        return "";
+
+    public String toCookie() throws Exception {
+
+        String result = URLEncoder.encode(AESEncryption.encrypt(String.format("{ username : '%s' , password : '%s' }", username, password)),"UTF-8");
+        return result;
     }
 }

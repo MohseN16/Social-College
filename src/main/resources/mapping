@@ -1,13 +1,15 @@
 [config]
 package.views=app.views
-package.base=app.controllers
+package.base=app
+
+[filters]
+*         /dashboard/*                 filters.MainFilter.Authenticate
 
 [actions]
-*         /                           BaseController.index
+*         /                           controllers.BaseController.index
 *         /view/{name}                view:/{name}.jsp
-*         /{class}/                   {class}Controller.index
-*         /{class}/{method}           {class}Controller.{method}
-
+*         /{class}/                   controllers.{class}Controller.index
+*         /{class}/{method}           controllers.{class}Controller.{method}
 
 
 
