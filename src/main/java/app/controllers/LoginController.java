@@ -36,13 +36,13 @@ public class LoginController extends WebMotionController {
 
                 return renderJSON("result", 1);
             } else {
-                return renderJSON("result", 0);
+                return renderJSON("result", 0,"message","نام کاربری یا رمز عبور معتبر نمی باشند","type","warning");
             }
 
         } catch (Exception ex) {
             Log log = new Log(ex);
             log.Save();
-            return renderJSON("result", 0);
+            return renderJSON("result", 0,"message","نام کاربری یا رمز عبور معتبر نمی باشند","type","error");
         }
 
     }

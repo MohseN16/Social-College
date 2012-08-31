@@ -1,9 +1,9 @@
 [config]
 package.views=app.views
 package.base=app
-
+server.listener.class=app.listeners.MainListener
 [filters]
-*         /dashboard/*                 filters.MainFilter.Authenticate
+*         /*                 filters.MainFilter.Authenticate
 
 [actions]
 *         /                           controllers.BaseController.index

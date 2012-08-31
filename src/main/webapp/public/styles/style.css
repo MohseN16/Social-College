@@ -31,6 +31,15 @@ color:#555;
     float: right;
        margin-right: 20px;
 }
+#header .account-info
+{
+     background-color: #F1F1F1;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 0 2px #AAAAAA inset;
+    float: left;
+    margin-top: 4px;
+    padding: 5px 10px
+}
 #header .logo
 {
     float: right;

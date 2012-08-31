@@ -5,17 +5,23 @@
     <div class="container">
         <a class="logo"><img src="http://cdn1.iconfinder.com/data/icons/iconfinder_pixel/education_course_training.png" /></a>
         <ul class="menu">
-            <li><a href="#">خانه</a></li>
+            <li><a href="/">خانه</a></li>
+               <li><a href="#" >راهنما</a></li>
+            <li><a href="#" >ارتباط با ما</a></li>
             <% if (!AuthenticateHelper.Authenticated()) {%>
             <li><a href="/login/">ورود</a></li>
             <li><a href="#" >عضویت</a></li>
+            <% } else {%>
+            <% if (AuthenticateHelper.Authenticated()) {%>
+            <li><a href="/dashboard/" >داشبورد</a></li>
+            <li><a href="/login/signout" >خروج</a></li>
             <% }%>
-            <li><a href="#" >راهنما</a></li>
-            <li><a href="#" >ارتباط با ما</a></li>
+            <%}%>
+         
         </ul>
-        <% if (AuthenticateHelper.Authenticated()) {%>
-        <a href="/login/signout">خروج</a>
-        <% }%>
+        <div class="account-info">
+            <img src="/public/images/icons/user-32.png" />
+        </div>
 
     </div>
 </div>

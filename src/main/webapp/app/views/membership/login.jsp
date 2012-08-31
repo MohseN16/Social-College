@@ -4,6 +4,7 @@
     <head>
         <title>social-college</title>
         <%@include file="/app/layouts/head.jspf" %>
+        <link href="/public/styles/animate.css" type="text/css" rel="stylesheet" />
         <script type="text/javascript" src="/public/scripts/membership.js"></script>
     </head>
     <body>
@@ -15,11 +16,14 @@
                 <br/>
                 <div class="row">
                     <div class="span5 offset3">
-                        <div class="panel">
+                        <div class="panel" id="login-panel">
                             <div class="panel-title">
                                 ورود
                             </div>
                             <div class="panel-body">
+                                <div id="login-msg" >
+                                    
+                                </div>
                                 <div class="form-horizontal"> 
                                     <div class="control-group">
                                         <label class="control-label">نام کاربری</label>
